@@ -1,0 +1,96 @@
+body, html {
+	height: 100%;
+	font-size: 20px;
+	font-family: Lobster;
+	font-weight: 400;
+	line-height: 1.6em;
+	color: rgb(167, 94, 94);  
+}
+
+.picture1, .picture2, .picture3 {
+	position: relative;
+	opacity: 0.77;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+/*	fixed = parallax
+	scroll = normal*/
+
+	background-attachment: fixed;
+}
+
+.picture1{
+	background-image: url("rose.jpeg");
+	min-height: 100%;
+}
+
+.picture2{
+	background-image: url("road.jpeg");
+	min-height: 100%;
+}
+
+.picture3{
+	background-image: url("lake.jpeg");
+	min-height: 100%;
+}
+.picture4{
+    background-image: url("pexels.jpeg");
+    min-height: 100%;
+    background-size: cover;
+    opacity: 0.77;
+    background-position: center;
+
+}
+.section {
+	text-align: center;
+	padding: 80px 80px;
+}
+
+.section-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.pictext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.ptext .border {
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
+
+.ptext .border.trans {
+	background-color: transparent;
+}
+
+/*For Mobile Responsiveness*/
+@media(max-width: 568px){
+	.picture1, .picture2, .picture3{
+		background-attachment: scroll;
+	}
+}
+.name{
+    background-color: #000;
+    color: #f4f4f4;
+    padding: 20px;
+    margin-left: 40%;
+    
+}
+.border{
+    padding: 50px;  
+}
